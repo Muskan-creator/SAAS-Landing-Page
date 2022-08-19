@@ -36,12 +36,12 @@ body {
     align-items: center;
 }
 .navbar .logo img {
-    width: 100px;
+    width: 6.25rem;
 }
 .navbar .list {
     list-style-type: none;
     display: flex;
-    gap: 50px;
+    gap: 3.12rem;
     color: #FFFFFF;
     font-weight: lighter;
     align-items: center;
@@ -64,19 +64,20 @@ body {
 /*------------------------- hero section -----------------------*/
 
 .hero {
+    height:80vh;
     display: flex;
-    margin-top: 50px;
-    gap: 40px;
+    margin-top: 3.12rem;
+    gap: 2.5rem;
 }
 .hero .hero-left h1 {
     color: var(--white);
     font-size: 3.4rem;
     line-height: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 1.8rem;
 }
 .hero .hero-left p {
     color: var(--white);
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 400;
 }
 .hero .hero-left button {
@@ -87,9 +88,9 @@ body {
     text-transform: uppercase;
     font-weight: lighter;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: lighter;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     cursor: pointer;
 }
 .hero .hero-left button:hover{
@@ -98,7 +99,7 @@ body {
 
 }
 .hero .hero-right {
-    margin-top: -80px;
+    margin-top: -5rem;
 }
 .hero .hero-right img {
     width: 650px;
@@ -111,24 +112,24 @@ body {
 .features {
     display: flex;
     align-items: center;
-    gap: 120px;
-    margin-top: 70px;
+    gap: 7.5rem;
+    margin-top: 4.3rem;
 }
 .features .feature-left img {
     width: 500px;
 }
 .features .feature-right h4 {
     font-size: 1.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 .features .feature-right .list {
     display: flex;
     list-style-type: none;
-    gap: 22px;
+    gap: 1.375rem;
     flex-direction: column;
 }
 .features .feature-right .list .list-item p {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .features .feature-right .list .list-item h6 {
     font-size: 1.1rem;
@@ -148,6 +149,7 @@ body {
     margin-bottom: 40px;
 }
 .customer .customer-cards {
+    flex-wrap: wrap;
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -220,12 +222,12 @@ body {
     }
     .bg {
         width:100vw;
-        height:900px;
+        height:56.25rem;
         background-size: cover;
     }
-    .container {
-        max-width: 100rem;
-        margin: 0 auto;
+   
+    .hero .hero-right img {
+        width: 500px;
     }
 }
 @media only screen and (max-width:1200px) {
@@ -239,11 +241,118 @@ body {
     }
     .bg {
         width:100vw;
-        height:700px;
+       
         background-size: cover;
     }
-    .container {
-        max-width: 100rem;
-        margin: 0 auto;
-    }
+    
 }
+@media  only screen and (max-width:768px) {
+    .navbar {
+        margin:0 auto;
+    }
+    .features .feature-left img {
+        width: 400px;
+    }
+    .navbar .list{
+        gap:1.3rem;
+    }
+    .features {
+        margin-top: 2rem;
+      
+        gap: 2.5rem;
+  
+    }
+    .hero .hero-left h1 {
+        font-size: 1.8rem;
+        line-height: 40px;
+    }
+    br {
+        display: none;
+    }
+    .container {
+        max-width: 80rem;
+       
+    }
+    .bg{
+        height:40rem;
+    }
+
+    
+}
+@media  only screen and (max-width:600px) {
+    .hero .hero-right img {
+        width: 50vw;
+        margin-top:50%;
+    } 
+    .hero .hero-left button{
+        margin-left:2rem;
+    }
+    .bg{
+            height:35rem;
+        }
+    .features .feature-left img {
+            width: 50vw;
+        }  
+       
+        .navbar .list{
+            gap:0.5rem;
+        } 
+        .navbar .list .list-item:last-child button{
+            padding: 10px 10px;
+       
+        }
+        .hero .hero-left h1 {
+            font-size: 1.5rem;
+            line-height: 40px;
+        }
+        .hero .hero-left p{
+            font-size:0.6rem;
+        }
+    
+    }
+  
+
+    @media  only screen and (max-width:400px) {
+        .navbar .list{
+            display:none;
+        }
+        .bg{
+            min-height:130vh;
+        }
+        .hero .hero-left h1 {
+            font-size: 1.2rem;
+            line-height: 40px;
+        }
+        .hero {
+            margin-top:2rem;
+            flex-direction: column;
+        }
+        .hero .hero-right {
+            margin-top: -10rem;
+        }
+        .hero .hero-left{
+            margin:0 2rem;
+        }
+       
+        .hero .hero-right img {
+            width: 100vw;
+        }
+        .features{
+            margin-top:10rem;
+            flex-direction: column-reverse;
+        }
+        .features .feature-left img {
+            width: 100vw;
+        }
+        .features .feature-right {
+            margin:0 2rem;
+           
+        }
+        .customer h2 {
+            font-size:1.5rem;
+            margin:0 2rem;
+        }
+        .navbar .logo img {
+            width: 5rem;
+        }
+    }
